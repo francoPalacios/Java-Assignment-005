@@ -3,21 +3,21 @@
 ## Part 1: - Tracing the Code
 As a new Java developer, you will be required to familiarize yourself with existing code before beginning to develop. That's what this section is about, developing your code tracing skills and familiarizing yourself with parts you may be able to use.
 * Scan through all the existing code and note what you have to work with.
-    * Method names
-    * Variables
+    * Method names : TempConversion, convertC2F, convertC2K, convertF2C, convertF2K, convertK2C, getTemp,getUnitChoice
+    * Variables : celsius, fahrenheit, kelvin, unit, 
 * Using Java terminology, break down every piece of the method **convertF2K**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
+    * What is the access modifier? public
+    * Is it a class or object method, how do you know? object, it sits within the class
+    * What is its return type? double
+    * What parameters does it require, and what are the parameter(s) datatype(s)? it requires double called fahrenheit
+    * Describe for me how the body of the method executes (i.e. its flow of execution). fahrenheit is run into convertF2C, which is then run into convertC2K, and ultimately returns a double called fahrenheit
 * Using Java terminology, break down method **getUnitChoice**.
-    * What is the access modifier?
-    * Is it a class or object method, how do you know?
-    * What is its return type?
-    * What parameters does it require, and what are the parameter(s) datatype(s)?
-    * Describe for me how the body of the method executes (i.e. its flow of execution).
-    * How do the format specifiers differ than what you've seen before and what do they do?
+    * What is the access modifier? public
+    * Is it a class or object method, how do you know? objet method, it sits within the class
+    * What is its return type? string
+    * What parameters does it require, and what are the parameter(s) datatype(s)? no perameters are defined, it requires a string
+    * Describe for me how the body of the method executes (i.e. its flow of execution). te method will print c, then print f, then print k. then return an input string
+    * How do the format specifiers differ than what you've seen before and what do they do? format specifiers here are to specify the number of characters in the string. 
 
 ## Part 2: - Implement Missing Method: convertK2F
 This Part is aimed at teaching you to use methods and code you have to add new functionality to existing code. In this case you will add the missing conversion method, but you don't need to know math :-)
